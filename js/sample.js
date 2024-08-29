@@ -1,4 +1,4 @@
-const { instance } = await WebAssembly.instantiateStreaming(fetch("./sample.wasm"));
+const { instance } = await WebAssembly.instantiateStreaming(fetch("../wasm/sample.wasm"));
 
 const valueA = document.querySelector("#value-a");
 const valueB = document.querySelector("#value-b");
