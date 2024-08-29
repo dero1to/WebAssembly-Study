@@ -5,7 +5,7 @@ type Exports = {
 };
 
 const wasm: Exports = await (async () => {
-    const { instance } = await WebAssembly.instantiate(await Deno.readFile("../wasm/string.wasm"));
+    const { instance } = await WebAssembly.instantiate(await Deno.readFile("../wasm/simd.wasm"));
     return instance.exports as Exports;
 })();
 
